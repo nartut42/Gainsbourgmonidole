@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /stock/
+Sitemap: https://gainsbourgmonidole.pages-perso.free.fr/sitemap.xml
