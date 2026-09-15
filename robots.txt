@@ -1,3 +1,35 @@
 User-agent: *
-Disallow: /stock/
+Allow: /
+
+# Sitemap
 Sitemap: https://gainsbourgmonidole.pages-perso.free.fr/sitemap.xml
+
+# Interdire les dossiers techniques / inutiles
+Disallow: /stock/
+Disallow: /_frame/
+Disallow: /*.avi$
+Disallow: /*.lnkbut.png$
+
+# Autoriser explicitement les ressources importantes
+Allow: /albumphoto1/
+Allow: /albumphoto2/
+Allow: /albumphoto3/
+Allow: /albumphotoseul/
+Allow: /photosgainsbour1/
+Allow: /photosgainsbour2/
+Allow: /photosgainsbour3/
+Allow: /photosgainsbourg/
+Allow: /photosdumur/
+Allow: /photoshommage15a/
+Allow: /photosinedites/
+Allow: /videos/
+Allow: /topic/
+Allow: /images/
+
+# Crawl-delay raisonnable pour free.fr / pages-perso
+Crawl-delay: 1
+
+# Googlebot spécifique
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1

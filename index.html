@@ -3,11 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
   
   <!-- Balises SEO Fondamentales -->
   <title>Serge Gainsbourg — Archives Photos, Collection & Souvenirs | Gainsbourg & Le Gainsborough</title>
-  <meta name="description" content="Explorez la collection d'archives rares et de photographies de Serge Gainsbourg : instants de vie avec Jane Birkin, émissions TV, clichés inédits et pèlerinage au 5 bis rue de Verneuil.">
+  <meta name="description" content="Explorez la collection d'archives rares et de photographies de Serge Gainsbourg : instants de vie avec Jane Birkin, émissions TV, clichés inédits, publicité et pèlerinage au 5 bis rue de Verneuil à Paris.">
+  <meta name="keywords" content="Serge Gainsbourg, photos Gainsbourg, archives Gainsbourg, Jane Birkin, Gainsbarre, 5 bis rue de Verneuil, Montparnasse, photographies rares, collection Gainsbourg, le Gainsborough">
+  <meta name="author" content="Gainsbourg & Le Gainsborough">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://gainsbourgmonidole.pages-perso.free.fr/index.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gainsbourgmonidole.pages-perso.free.fr/">
+  <meta property="og:title" content="Serge Gainsbourg — Archives Photos & Collection Visuelle">
+  <meta property="og:description" content="Collection d'archives photographiques rares de Serge Gainsbourg : Jane Birkin, plateaux TV, inédits et hommages au 5 bis rue de Verneuil.">
+  <meta property="og:image" content="https://gainsbourgmonidole.pages-perso.free.fr/bv000001.jpg">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Gainsbourg & Le Gainsborough">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Serge Gainsbourg — Archives Photos & Collection">
+  <meta name="twitter:description" content="Archives photographiques et souvenirs visuels de Serge Gainsbourg.">
+  <meta name="twitter:image" content="https://gainsbourgmonidole.pages-perso.free.fr/bv000001.jpg">
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5288172791580511" crossorigin="anonymous"></script>
 
@@ -15,14 +38,39 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   
-  <!-- Schema.org : Données structurées -->
+  <!-- Schema.org : Données structurées enrichies -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Gainsbourg & Le Gainsborough",
-    "url": "http://gainsbourgmonidole.free.fr/",
-    "description": "Archives photographiques et collection visuelle dédiée à Serge Gainsbourg."
+    "url": "https://gainsbourgmonidole.pages-perso.free.fr/",
+    "description": "Archives photographiques et collection visuelle dédiée à Serge Gainsbourg : portraits, Jane Birkin, plateaux TV, publicité, inédits et hommages.",
+    "inLanguage": "fr-FR",
+    "publisher": {
+      "@type": "Person",
+      "name": "Gainsbourg & Le Gainsborough"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://gainsbourgmonidole.pages-perso.free.fr/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Serge Gainsbourg",
+    "alternateName": ["Gainsbarre", "Lucien Ginsburg"],
+    "birthDate": "1928-04-02",
+    "deathDate": "1991-03-02",
+    "url": "https://gainsbourgmonidole.pages-perso.free.fr/",
+    "image": "https://gainsbourgmonidole.pages-perso.free.fr/bv000001.jpg",
+    "sameAs": [
+      "https://fr.wikipedia.org/wiki/Serge_Gainsbourg"
+    ]
   }
   </script>
 
@@ -298,10 +346,42 @@
     .contact-email a:hover { color: var(--accent-gold); }
     .copyright { margin-top: 2rem; font-size: 0.75rem !important; opacity: 0.5; }
 
+    /* Fil d'Ariane */
+    .breadcrumb {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem 0;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .breadcrumb a {
+      color: var(--accent-gold);
+      text-decoration: none;
+    }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 0.4rem; opacity: 0.6; }
+
+    /* Liens footer maillage */
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.2rem;
+      margin: 1.5rem 0;
+      font-size: 0.85rem;
+    }
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .footer-links a:hover { color: var(--accent-gold); }
+
     @media (max-width: 768px) {
       .navbar { flex-direction: column; gap: 1rem; padding: 1rem; }
       .hero h1 { font-size: 2.2rem; }
       .gallery-section { padding: 4rem 1rem; }
+      .breadcrumb { padding: 1rem 1rem 0; }
     }
   </style>
 </head>
@@ -309,14 +389,22 @@
 
   <header class="navbar">
     <div class="logo">GAINSBOURG <span>& Le Gainsborough</span></div>
-    <nav>
+    <nav aria-label="Navigation principale">
       <ul>
         <li><a href="#accueil">Accueil</a></li>
         <li><a href="#galerie">Galerie</a></li>
+        <li><a href="videos/index.html">Vidéos</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
+
+  <!-- Fil d'Ariane -->
+  <nav class="breadcrumb" aria-label="Fil d'Ariane">
+    <a href="index.html">Accueil</a>
+    <span aria-hidden="true">›</span>
+    <span>Galerie Serge Gainsbourg</span>
+  </nav>
 
   <main>
     <section id="accueil" class="hero">
@@ -329,9 +417,10 @@
       </div>
     </section>
 
-    <!-- Section textuelle pour le référencement naturel -->
+    <!-- Section textuelle enrichie pour le référencement naturel + maillage -->
     <article class="intro-seo">
-      <p>Bienvenue sur l'album hommage dédié à la mémoire visuelle de <strong>Serge Gainsbourg</strong>. Parcourez des décennies d'archives retraçant son parcours artistique, ses duos légendaires avec Jane Birkin, ses apparitions dans les médias ainsi que les hommages déposés au 5 bis rue de Verneuil à Paris.</p>
+      <p>Bienvenue sur l'album hommage dédié à la mémoire visuelle de <strong>Serge Gainsbourg</strong> (1928-1991). Parcourez des décennies d'archives retraçant son parcours artistique, ses duos légendaires avec <a href="photosgainsbour2/index.html">Jane Birkin</a>, ses apparitions sur les <a href="albumphoto1/index.html">plateaux de télévision</a>, ses <a href="photosgainsbour3/index.html">publicités cultes</a>, les <a href="photosinedites/index.html">clichés inédits</a> ainsi que les hommages déposés au <a href="photosdumur/index.html">5 bis rue de Verneuil</a> à Paris et au <a href="photoshommage15a/index.html">cimetière du Montparnasse</a>.</p>
+      <p>Cette collection visuelle regroupe portraits seuls, instants de famille, vidéos d'époque et documents rares pour les passionnés de l'œuvre de Gainsbourg et de Gainsbarre.</p>
     </article>
 
     <section id="galerie" class="gallery-section">
@@ -422,9 +511,22 @@
   <footer id="contact">
     <div class="footer-container">
       <h2>Gainsbourg et le Gainsborough</h2>
-      <p>Site de passionné dédié à la mémoire visuelle de Serge Gainsbourg.</p>
+      <p>Site de passionné dédié à la mémoire visuelle de Serge Gainsbourg — archives photos, vidéos et hommages.</p>
+      
+      <nav class="footer-links" aria-label="Liens vers les albums">
+        <a href="albumphotoseul/index.html">Gainsbourg Seul</a>
+        <a href="photosgainsbour2/index.html">Serge &amp; Jane Birkin</a>
+        <a href="albumphoto1/index.html">Plateaux TV</a>
+        <a href="albumphoto3/index.html">Les Proches</a>
+        <a href="photosgainsbour3/index.html">Publicité</a>
+        <a href="photosinedites/index.html">Clichés Inédits</a>
+        <a href="photosdumur/index.html">5 bis rue de Verneuil</a>
+        <a href="photoshommage15a/index.html">Pèlerinage Montparnasse</a>
+        <a href="videos/index.html">Vidéos</a>
+      </nav>
+
       <p class="contact-email">Contact : <a href="mailto:nartut43@gmail.com">nartut43@gmail.com</a></p>
-      <p class="copyright">&copy; Gainsbourg & Le Gainsborough. Tous droits réservés.</p>
+      <p class="copyright">&copy; 2026 Gainsbourg &amp; Le Gainsborough. Tous droits réservés. — Site non officiel, hommage photographique.</p>
     </div>
   </footer>
 
